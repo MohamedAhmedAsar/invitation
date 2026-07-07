@@ -1845,8 +1845,8 @@ window.addEventListener("load", () => {
 
       /* ── COUNTDOWN ── */
       function tick() {
-        const target = new Date("2026-07-26T19:00:00");
-        let diff = target - new Date();
+      const target = new Date("2026-07-26T19:00:00+03:00");        
+      let diff = target - new Date();
         if (diff < 0) diff = 0;
         const pad = (n) => String(Math.floor(n)).padStart(2, "0");
         document.getElementById("cd-d").textContent = pad(diff / 86400000);
